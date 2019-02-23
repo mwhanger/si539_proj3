@@ -1,0 +1,73 @@
+/* CSS For Hiding 'Skip to Main' link unless it receives keyboard focus adapted from https://webaim.org/techniques/css/invisiblecontent/ */
+a.skip-main{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+a.skip-main:focus{
+  position:static;
+  width:auto;
+  height:auto;
+}
+nav{
+  font-size: 16px;
+  padding: 1em 0em;
+  /* text-align: left; */
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav ul li{
+  list-style-type: none;
+  margin: 1em;
+}
+nav a.current{
+  font-style: italic;
+  text-transform: uppercase;
+}
+section.gallery section img{
+  display: inline-block;
+  width: 30vw;
+  margin: auto 0;
+  align-text: center;
+}
+section.gallery{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* resource for grid trick: https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
+  grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) );
+}
+figure{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 2em;
+}
+figure img {
+  /* text-align: center; */
+  width: 50vw;
+}
+body{
+  font-family: 'Montserrat';
+}
+header{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+header h1{
+  /* line-height: 200%; */
+  font-size: 4em;
+}
+footer{
+  display: inline-block;
+  padding: 2em 0em;
+  width: 100%;
+  text-align: left;
+}
