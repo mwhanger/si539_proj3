@@ -13,7 +13,7 @@ a.skip-main:focus{
   height:auto;
 }
 nav{
-  font-size: 16px;
+  font-size: 1.5em;
   padding: 1em 0em;
   /* text-align: left; */
 }
@@ -31,17 +31,27 @@ nav a.current{
   font-style: italic;
   text-transform: uppercase;
 }
-section.gallery section img{
-  display: inline-block;
-  width: 30vw;
-  margin: auto 0;
-  align-text: center;
-}
 section.gallery{
+  margin-left: 40px;
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr;
   /* resource for grid trick: https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
-  grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) );
+  /* grid-template-columns: repeat( auto-fill, minmax(min-content, max-content) ); */
+}
+section.gallery section {
+  /* display: inline-block; */
+  /* width: 33vw;
+  margin: auto 0;
+  justify-self: end; */
+  padding: 1em;
+}
+section.gallery section img{
+  max-width: 100%;
+  max-height: auto;
+  object-fit: contain;
+}
+section.gallery section ul{
+  list-style-type: none;
 }
 figure{
   display: inline-block;
@@ -65,9 +75,18 @@ header h1{
   /* line-height: 200%; */
   font-size: 4em;
 }
+main > h2{
+  font-size: 125%;
+  margin: .75em;
+}
+main.longtext p{
+  line-height: 2em;
+  padding-bottom:1em;
+  padding-left: .75em;
+}
 footer{
   display: inline-block;
-  padding: 2em 0em;
+  padding: 2em .75em;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
