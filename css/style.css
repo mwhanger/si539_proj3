@@ -12,6 +12,14 @@ a.skip-main:focus{
   width:auto;
   height:auto;
 }
+header{
+  background-image: url("../images/background_octopus_test.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-color: #ffffff;
+  margin: 1em 0em;
+}
 nav{
   font-size: 1.5em;
   padding: 1em 0em;
