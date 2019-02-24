@@ -36,14 +36,13 @@ section.gallery{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* resource for grid trick: https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
-  /* grid-template-columns: repeat( auto-fill, minmax(min-content, max-content) ); */
+  /* grid-template-columns: repeat( auto-fill, minmax(min-content, 30vw) ); */
 }
 section.gallery section {
   /* display: inline-block; */
-  /* width: 33vw;
-  margin: auto 0;
-  justify-self: end; */
+  /* width: 30vw; */
   padding: 1em;
+  place-self: baseline;
 }
 section.gallery section img{
   max-width: 100%;
@@ -52,6 +51,7 @@ section.gallery section img{
 }
 section.gallery section ul{
   list-style-type: none;
+  text-align: center;
 }
 figure{
   display: inline-block;
@@ -84,9 +84,23 @@ main.longtext p{
   padding-bottom:1em;
   padding-left: .75em;
 }
+ul.events{
+  margin-left: 2em;
+  list-style-type: none;
+}
+ul.events > li{
+  display: inline-block;
+  margin: .75em;
+  width: 100%;
+}
+ul.events > li > img{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: .5em;
+  width: 40vw;
+}
 footer{
   display: inline-block;
-  font-size: 100%;
   padding: 2em .75em;
   width: 100%;
   text-align: center;
