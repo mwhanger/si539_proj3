@@ -42,7 +42,7 @@ section.gallery section {
   /* display: inline-block; */
   /* width: 30vw; */
   padding: 1em;
-  place-self: baseline;
+  place-self: center;
 }
 section.gallery section img{
   max-width: 100%;
@@ -52,6 +52,7 @@ section.gallery section img{
 section.gallery section ul{
   list-style-type: none;
   text-align: center;
+  max-width: 100%;
 }
 figure{
   display: inline-block;
@@ -87,17 +88,20 @@ main.longtext p{
 ul.events{
   margin-left: 2em;
   list-style-type: none;
+  display: inline-block;
 }
 ul.events > li{
-  display: inline-block;
+
   margin: .75em;
-  width: 100%;
+  padding-bottom: 1em;
+  /* width: 100vw; */
 }
 ul.events > li > img{
   display: block;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   margin-bottom: .5em;
-  width: 40vw;
+  /* width: 40vw; */
+  height: 30vh;
 }
 footer{
   display: inline-block;
