@@ -13,11 +13,12 @@ a.skip-main:focus{
   height:auto;
 }
 header{
+  /* Octopus image sourced via google image search: https://www.pinterest.co.uk/pin/434738170262088593/ */
+  background-color: #ffffff;
   background-image: url("../images/background_octopus_test.jpg");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: contain;
-  background-color: #ffffff;
   margin: 1em 0em;
 }
 nav{
@@ -32,6 +33,7 @@ nav ul{
   justify-content: center;
 }
 nav ul li{
+  background-color: rgba(255, 255, 255, 0.5);
   list-style-type: none;
   margin: 1em;
 }
